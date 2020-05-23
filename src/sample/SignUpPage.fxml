@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="485.0" minWidth="600.0" opacity="0.8" prefHeight="485.0" prefWidth="600.0" styleClass="background" stylesheets="@Background.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.SignUpController">
+   <children>
+      <Label alignment="CENTER" contentDisplay="CENTER" graphicTextGap="10.0" layoutX="98.0" maxHeight="45.0" maxWidth="376.0" prefHeight="45.0" prefWidth="373.0" text="Welcome to I-Confrences!" textAlignment="CENTER" textFill="WHITE" AnchorPane.leftAnchor="98.0" AnchorPane.rightAnchor="129.0" AnchorPane.topAnchor="10.0">
+         <font>
+            <Font size="32.0" />
+         </font>
+         <padding>
+            <Insets bottom="85.0" />
+         </padding>
+      </Label>
+      <VBox alignment="CENTER" depthTest="ENABLE" layoutX="73.0" layoutY="111.0" prefHeight="416.0" prefWidth="455.0" spacing="20.0" AnchorPane.bottomAnchor="-2.0" AnchorPane.leftAnchor="73.0" AnchorPane.rightAnchor="72.0" AnchorPane.topAnchor="71.0">
+         <children>
+            <TextField fx:id="user_name" alignment="CENTER" maxHeight="40.0" maxWidth="571.0" opacity="0.8" prefHeight="40.0" prefWidth="571.0" promptText="User Name" />
+            <ComboBox fx:id="profession" opacity="0.8" prefHeight="40.0" prefWidth="571.0" promptText="                                                                          Profession" />
+            <TextField fx:id="country" alignment="CENTER" layoutX="10.0" layoutY="76.0" maxHeight="40.0" maxWidth="571.0" opacity="0.8" prefHeight="40.0" prefWidth="571.0" promptText="Country" />
+            <TextField fx:id="email" alignment="CENTER" layoutX="10.0" layoutY="76.0" maxHeight="40.0" maxWidth="571.0" opacity="0.8" prefHeight="40.0" prefWidth="571.0" promptText="Email" />
+            <TextField fx:id="password" alignment="CENTER" layoutX="10.0" layoutY="106.0" maxHeight="40.0" maxWidth="571.0" opacity="0.8" prefHeight="40.0" prefWidth="571.0" promptText="Password" />
+            <Button contentDisplay="CENTER" layoutX="10.0" layoutY="123.0" mnemonicParsing="false" onAction="#SignMeUp" prefHeight="45.0" prefWidth="571.0" style="-fx-background-color: #0652DD;" text="Sign Me Up" textFill="#0d0000" VBox.vgrow="ALWAYS">
+               <font>
+                  <Font name="Open Sans" size="14.0" />
+               </font>
+            </Button>
+         </children>
+         <effect>
+            <Glow level="0.0" />
+         </effect>
+      </VBox>
+   </children>
+   <padding>
+      <Insets top="40.0" />
+   </padding>
+</AnchorPane>

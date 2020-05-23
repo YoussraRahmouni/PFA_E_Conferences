@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="600.0" minWidth="800.0" prefHeight="600.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.MyAccountPageController">
+   <children>
+      <StackPane maxWidth="400.0" prefHeight="400.0" prefWidth="250.0" styleClass="bluebackground" stylesheets="@blue.css" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <VBox prefHeight="200.0" prefWidth="100.0">
+               <children>
+                  <HBox prefHeight="116.0" prefWidth="250.0">
+                     <children>
+                        <ImageView blendMode="DARKEN" fitHeight="150.0" fitWidth="121.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@userIcon2.png" />
+                           </image>
+                           <HBox.margin>
+                              <Insets top="30.0" />
+                           </HBox.margin>
+                        </ImageView>
+                        <Button mnemonicParsing="false" prefHeight="45.0" prefWidth="138.0" style="-fx-background-color: #2980b9;" text="My Account" textFill="WHITE">
+                           <font>
+                              <Font size="18.0" />
+                           </font>
+                           <HBox.margin>
+                              <Insets right="5.0" top="65.0" />
+                           </HBox.margin>
+                        </Button>
+                     </children>
+                     <VBox.margin>
+                        <Insets top="50.0" />
+                     </VBox.margin>
+                  </HBox>
+                  <HBox minHeight="95.0" minWidth="250.0" prefHeight="95.0" prefWidth="250.0">
+                     <children>
+                        <ImageView blendMode="DARKEN" fitHeight="96.0" fitWidth="109.0" opacity="0.6" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@icon.png" />
+                           </image>
+                           <HBox.margin>
+                              <Insets left="16.0" />
+                           </HBox.margin>
+                        </ImageView>
+                        <Button mnemonicParsing="false" onAction="#GoToMyConferences" prefHeight="45.0" prefWidth="138.0" style="-fx-background-color: #2980b9;" text="My Conferences" textFill="WHITE">
+                           <font>
+                              <Font size="16.0" />
+                           </font>
+                           <HBox.margin>
+                              <Insets top="40.0" />
+                           </HBox.margin>
+                        </Button>
+                     </children>
+                     <VBox.margin>
+                        <Insets top="20.0" />
+                     </VBox.margin>
+                  </HBox>
+                  <HBox layoutX="10.0" layoutY="132.0" minHeight="95.0" minWidth="250.0" prefHeight="95.0" prefWidth="250.0">
+                     <children>
+                        <ImageView blendMode="DARKEN" fitHeight="96.0" fitWidth="112.0" opacity="0.8" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@list.png" />
+                           </image>
+                           <HBox.margin>
+                              <Insets left="16.0" />
+                           </HBox.margin>
+                        </ImageView>
+                        <Button mnemonicParsing="false" onAction="#GoToConferencesList" prefHeight="45.0" prefWidth="138.0" style="-fx-background-color: #2980b9;" text="Conferences List" textFill="WHITE">
+                           <font>
+                              <Font size="16.0" />
+                           </font>
+                           <HBox.margin>
+                              <Insets top="40.0" />
+                           </HBox.margin>
+                        </Button>
+                     </children>
+                     <VBox.margin>
+                        <Insets top="20.0" />
+                     </VBox.margin>
+                  </HBox>
+                  <HBox layoutX="10.0" layoutY="228.0" maxHeight="95.0" maxWidth="400.0" minHeight="95.0" minWidth="250.0" prefHeight="95.0" prefWidth="250.0">
+                     <children>
+                        <ImageView blendMode="DARKEN" fitHeight="96.0" fitWidth="109.0" opacity="0.5" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@stat.png" />
+                           </image>
+                           <HBox.margin>
+                              <Insets left="16.0" />
+                           </HBox.margin>
+                        </ImageView>
+                        <Button mnemonicParsing="false" onAction="#GoToMyStatistics" prefHeight="45.0" prefWidth="138.0" style="-fx-background-color: #2980b9;" text="My Statistics" textFill="WHITE">
+                           <font>
+                              <Font size="16.0" />
+                           </font>
+                           <HBox.margin>
+                              <Insets top="40.0" />
+                           </HBox.margin>
+                        </Button>
+                     </children>
+                     <VBox.margin>
+                        <Insets top="20.0" />
+                     </VBox.margin>
+                  </HBox>
+               </children></VBox>
+         </children>
+      </StackPane>
+      <VBox layoutX="250.0" prefHeight="600.0" prefWidth="549.0" style="-fx-background-color: #ffffff;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="250.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <ImageView blendMode="DARKEN" fitHeight="150.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true">
+               <VBox.margin>
+                  <Insets left="450.0" top="10.0" />
+               </VBox.margin>
+               <image>
+                  <Image url="@usericon1.png" />
+               </image>
+            </ImageView>
+            <Label fx:id="Username" alignment="CENTER" prefHeight="39.0" prefWidth="183.0" text="Username" textFill="#12cbc4">
+               <VBox.margin>
+                  <Insets left="440.0" top="100.0" />
+               </VBox.margin>
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <Label fx:id="Profession" alignment="CENTER" layoutX="10.0" layoutY="10.0" prefHeight="39.0" prefWidth="183.0" text="Profession" textFill="#12cbc4">
+               <VBox.margin>
+                  <Insets left="440.0" top="30.0" />
+               </VBox.margin>
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <Label fx:id="Country" alignment="CENTER" layoutX="160.0" layoutY="79.0" prefHeight="39.0" prefWidth="183.0" text="Country" textFill="#12cbc4">
+               <VBox.margin>
+                  <Insets left="440.0" top="50.0" />
+               </VBox.margin>
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <Label fx:id="Email" alignment="CENTER" prefHeight="39.0" prefWidth="400.0" text="Email" textFill="#12cbc4">
+               <VBox.margin>
+                  <Insets left="350.0" top="50.0" />
+               </VBox.margin>
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+         </children>
+         <effect>
+            <Glow />
+         </effect>
+      </VBox>
+   </children>
+</AnchorPane>

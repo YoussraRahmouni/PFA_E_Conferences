@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="609.0" minWidth="1000.0" prefHeight="609.0" prefWidth="1000.0" style="-fx-background-color: #dfe4ea;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.ProfessorConferenceListController">
+   <children>
+      <StackPane maxWidth="400.0" prefHeight="400.0" prefWidth="250.0" styleClass="bluebackground" stylesheets="@blue.css" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <VBox prefHeight="200.0" prefWidth="100.0">
+               <children>
+                  <HBox prefHeight="116.0" prefWidth="250.0">
+                     <children>
+                        <ImageView blendMode="DARKEN" fitHeight="150.0" fitWidth="121.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@userIcon2.png" />
+                           </image>
+                           <HBox.margin>
+                              <Insets top="30.0" />
+                           </HBox.margin>
+                        </ImageView>
+                        <Button mnemonicParsing="false" prefHeight="45.0" prefWidth="138.0" style="-fx-background-color: #2980b9;" text="My Account" textFill="WHITE">
+                           <font>
+                              <Font size="18.0" />
+                           </font>
+                           <HBox.margin>
+                              <Insets right="5.0" top="65.0" />
+                           </HBox.margin>
+                        </Button>
+                     </children>
+                     <VBox.margin>
+                        <Insets top="50.0" />
+                     </VBox.margin>
+                  </HBox>
+                  <HBox minHeight="95.0" minWidth="250.0" prefHeight="95.0" prefWidth="250.0">
+                     <children>
+                        <ImageView blendMode="DARKEN" fitHeight="96.0" fitWidth="109.0" opacity="0.6" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@icon.png" />
+                           </image>
+                           <HBox.margin>
+                              <Insets left="16.0" />
+                           </HBox.margin>
+                        </ImageView>
+                        <Button mnemonicParsing="false" prefHeight="45.0" prefWidth="138.0" style="-fx-background-color: #2980b9;" text="Thesis students" textFill="WHITE">
+                           <font>
+                              <Font size="16.0" />
+                           </font>
+                           <HBox.margin>
+                              <Insets top="40.0" />
+                           </HBox.margin>
+                        </Button>
+                     </children>
+                     <VBox.margin>
+                        <Insets top="50.0" />
+                     </VBox.margin>
+                  </HBox>
+                  <HBox layoutX="10.0" layoutY="132.0" minHeight="95.0" minWidth="250.0" prefHeight="95.0" prefWidth="250.0">
+                     <children>
+                        <ImageView blendMode="DARKEN" fitHeight="96.0" fitWidth="112.0" opacity="0.8" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@list.png" />
+                           </image>
+                           <HBox.margin>
+                              <Insets left="16.0" />
+                           </HBox.margin>
+                        </ImageView>
+                        <Button mnemonicParsing="false" prefHeight="45.0" prefWidth="138.0" style="-fx-background-color: #2980b9;" text="Conferences List" textFill="WHITE">
+                           <font>
+                              <Font size="16.0" />
+                           </font>
+                           <HBox.margin>
+                              <Insets top="40.0" />
+                           </HBox.margin>
+                        </Button>
+                     </children>
+                     <VBox.margin>
+                        <Insets top="50.0" />
+                     </VBox.margin>
+                  </HBox>
+                  <HBox layoutX="10.0" layoutY="228.0" maxHeight="95.0" maxWidth="400.0" minHeight="95.0" minWidth="250.0" prefHeight="95.0" prefWidth="250.0">
+                     <children>
+                        <ImageView blendMode="DARKEN" fitHeight="96.0" fitWidth="109.0" opacity="0.5" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@stat.png" />
+                           </image>
+                           <HBox.margin>
+                              <Insets left="16.0" />
+                           </HBox.margin>
+                        </ImageView>
+                        <Button mnemonicParsing="false" prefHeight="45.0" prefWidth="138.0" style="-fx-background-color: #2980b9;" text="Group Statistics" textFill="WHITE">
+                           <font>
+                              <Font size="16.0" />
+                           </font>
+                           <HBox.margin>
+                              <Insets top="40.0" />
+                           </HBox.margin>
+                        </Button>
+                     </children>
+                     <opaqueInsets>
+                        <Insets />
+                     </opaqueInsets>
+                     <VBox.margin>
+                        <Insets top="50.0" />
+                     </VBox.margin>
+                  </HBox>
+               </children></VBox>
+         </children>
+      </StackPane>
+      <HBox layoutX="264.0" layoutY="519.0" prefHeight="76.0" prefWidth="665.0" AnchorPane.leftAnchor="264.0" AnchorPane.rightAnchor="50.0">
+         <children>
+            <Button fx:id="Add_To_Conf_List" layoutX="308.0" mnemonicParsing="false" onAction="#AddToConferenceList" prefHeight="51.0" prefWidth="311.0" text="Add to Conference List" textAlignment="CENTER">
+               <HBox.margin>
+                  <Insets left="250.0" top="25.0" />
+               </HBox.margin>
+            </Button>
+         </children>
+         <padding>
+            <Insets left="100.0" />
+         </padding>
+      </HBox>
+      <TableView fx:id="Conferences_Table" editable="true" layoutX="254.0" layoutY="86.0" prefHeight="317.0" prefWidth="739.0" style="-fx-background-color: #dfe4ea;" AnchorPane.bottomAnchor="206.0" AnchorPane.leftAnchor="254.0" AnchorPane.rightAnchor="7.0" AnchorPane.topAnchor="86.0">
+        <columns>
+          <TableColumn fx:id="CONFERENCE_NAME" minWidth="130.0" prefWidth="130.0" resizable="false" text="Conference Name" />
+          <TableColumn fx:id="SUBJECT" minWidth="91.0" prefWidth="91.0" resizable="false" text="Subject" />
+            <TableColumn fx:id="START_DATE" minWidth="82.0" prefWidth="82.0" resizable="false" text="Start Date" />
+            <TableColumn fx:id="END_DATE" minWidth="82.0" prefWidth="82.0" resizable="false" text="End Date" />
+            <TableColumn fx:id="COUNTRY" minWidth="98.0" prefWidth="98.0" text="Country" />
+            <TableColumn fx:id="CITY" minWidth="98.0" prefWidth="98.0" text="City" />
+            <TableColumn fx:id="SUBMISSION_DATE" minWidth="125.0" prefWidth="125.0" text="Submission Date" />
+            <TableColumn fx:id="NOTIFICATION_DATE" minWidth="125.0" prefWidth="125.0" resizable="false" text="Notification Date" />
+            <TableColumn fx:id="CONFIRMATION_DATE" minWidth="125.0" prefWidth="125.0" text="Confirmation Date" />
+            <TableColumn fx:id="CONFERENCE_LINK" minWidth="150.0" prefWidth="150.0" text="Conference Link" />
+        </columns>
+      </TableView>
+      <HBox layoutX="253.0" layoutY="419.0" prefHeight="100.0" prefWidth="1203.0">
+         <children>
+            <TextField fx:id="Conference_Name" minWidth="130.0" prefWidth="130.0" promptText="Conference Name">
+               <HBox.margin>
+                  <Insets top="30.0" />
+               </HBox.margin>
+            </TextField>
+            <TextField fx:id="Subject" layoutX="10.0" layoutY="10.0" prefWidth="91.0" promptText="Subject">
+               <HBox.margin>
+                  <Insets top="30.0" />
+               </HBox.margin>
+            </TextField>
+            <DatePicker fx:id="Start_Date" prefHeight="25.0" prefWidth="82.0" promptText="start date">
+               <HBox.margin>
+                  <Insets top="30.0" />
+               </HBox.margin>
+            </DatePicker>
+            <DatePicker fx:id="End_Date" layoutX="308.0" layoutY="10.0" prefHeight="25.0" prefWidth="82.0" promptText="end date">
+               <HBox.margin>
+                  <Insets top="30.0" />
+               </HBox.margin>
+            </DatePicker>
+            <TextField fx:id="Country" layoutX="159.0" layoutY="10.0" prefWidth="98.0" promptText="Country">
+               <HBox.margin>
+                  <Insets top="30.0" />
+               </HBox.margin>
+            </TextField>
+            <TextField fx:id="City" layoutX="656.0" layoutY="10.0" prefWidth="98.0" promptText="City">
+               <HBox.margin>
+                  <Insets top="30.0" />
+               </HBox.margin>
+            </TextField>
+            <DatePicker fx:id="Submission_Date" layoutX="482.0" layoutY="10.0" prefWidth="120.0" promptText="submission date">
+               <HBox.margin>
+                  <Insets top="30.0" />
+               </HBox.margin>
+            </DatePicker>
+            <DatePicker fx:id="Notification_Date" layoutX="464.0" layoutY="10.0" prefWidth="120.0" promptText="notification date">
+               <HBox.margin>
+                  <Insets top="30.0" />
+               </HBox.margin>
+            </DatePicker>
+            <DatePicker fx:id="Confirmation_Date" layoutX="401.0" layoutY="10.0" prefWidth="120.0" promptText="confirmation date">
+               <HBox.margin>
+                  <Insets top="30.0" />
+               </HBox.margin>
+            </DatePicker>
+            <TextField fx:id="Conference_Link" layoutX="586.0" layoutY="10.0" prefWidth="150.0" promptText="Conference Link">
+               <HBox.margin>
+                  <Insets top="30.0" />
+               </HBox.margin>
+            </TextField>
+         </children>
+      </HBox>
+   </children>
+</AnchorPane>
