@@ -19,7 +19,7 @@ import java.sql.SQLException;
 import java.sql.Statement;
 import java.util.ResourceBundle;
 
-import static sample.MyConferencesController.Conference_Name;
+import static sample.StudentConferencesController.table_Clicked;
 import static sample.MyThesisStudentsController.thesisStudent_Clicked;
 
 
@@ -76,7 +76,7 @@ import static sample.MyThesisStudentsController.thesisStudent_Clicked;
             } catch (SQLException e) {
                 e.printStackTrace();
             }
-            String sql = "SELECT CONFERENCE_ID FROM CONFERENCE WHERE  CONFERENCE_NAME='"+ Conference_Name +"' ";
+            String sql = "SELECT CONFERENCE_ID FROM CONFERENCE WHERE  CONFERENCE_NAME='"+ table_Clicked +"' ";
             // store result in result set
             ResultSet result2 = null;
             try {
