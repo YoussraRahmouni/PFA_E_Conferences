@@ -115,7 +115,7 @@
                     </children></VBox>
             </children>
         </StackPane>
-      <BarChart fx:id="BarChart" layoutX="288.0" layoutY="143.0" prefHeight="330.0" prefWidth="484.0">
+      <BarChart fx:id="BarChart" layoutX="288.0" layoutY="138.0" prefHeight="442.0" prefWidth="986.0">
         <xAxis>
           <CategoryAxis side="BOTTOM" fx:id="x" />
         </xAxis>
@@ -123,7 +123,7 @@
           <NumberAxis fx:id="y" side="LEFT" />
         </yAxis>
       </BarChart>
-      <Label layoutX="435.0" layoutY="59.0" prefHeight="67.0" prefWidth="225.0" text="Submission statistics" textAlignment="JUSTIFY" textFill="#951ac1">
+      <Label layoutX="643.0" layoutY="52.0" prefHeight="67.0" prefWidth="290.0" text="result of your submissions" textAlignment="JUSTIFY" textFill="#951ac1">
          <font>
             <Font size="24.0" />
          </font>

@@ -43,86 +43,92 @@ public class StatisticsController implements Initializable {
 
 
     @Override
-    public void initialize(URL url, ResourceBundle resourceBundle) {
+   public void initialize(URL url, ResourceBundle resourceBundle) {
+
+
+        //showing the barchart
+        try {
+            loadData1();
+        } catch (SQLException throwables) {
+            throwables.printStackTrace();
+        }
+
+
+
+    }
+
+    private void loadData1() throws SQLException {
+
+        //creating a XYChart
         XYChart.Series series = new XYChart.Series<>();
 
-
-
-
-
+        // connect to database
         ConnectionClass connectionClass = new ConnectionClass();
         Connection connection = connectionClass.getConnection();
+        // selecting sum of notification, submission and confirmation state that will be respectively accepted submissions, submitted and confrmed values
+        String query = "SELECT SUM(NOTIFICATION_STATE), SUM(SUBMISSION_STATE), SUM(CONFIRMATION_STATE) FROM MY_CONFERENCE WHERE USER_ID ='" + user_id + "' ";
+        //create statement
+        Statement statement = connection.createStatement();
+        Statement state = connection.createStatement();
 
-        String query = "SELECT SUM(NOTIFICATION_STATE) FROM MY_CONFERENCE WHERE USER_ID ='" + user_id + "' ";
-        Statement statement = null;
+        // sum of the lines of the table
+        ResultSet result1 = state.executeQuery("SELECT COUNT(*) FROM MY_CONFERENCE WHERE USER_ID ='" + user_id + "'");
+        ResultSet result = statement.executeQuery(query);
 
-        Statement state = null;
-        try {
-            state = connection.createStatement();
-        } catch (SQLException throwables) {
-            throwables.printStackTrace();
-        }
-
-
-        ResultSet result1 = null;
-        try {
-            result1 = state.executeQuery("SELECT * FROM MY_CONFERENCE WHERE USER_ID ='"+ user_id + "'");
-        } catch (SQLException throwables) {
-            throwables.printStackTrace();
-        }
-
-        try {
-            statement = connection.createStatement();
-        } catch (SQLException throwables) {
-            throwables.printStackTrace();
-        }
-
-        ResultSet result = null;
-
-        try {
-            result = statement.executeQuery(query);
-        } catch (SQLException throwables) {
-            throwables.printStackTrace();
-        }
-
-
-
-        while (true) {
-
-            try {
-                if (!result.next()) break;
-            } catch (SQLException throwables) {
-                throwables.printStackTrace();
-            }
-            try {
-                System.out.println(result.getString("sum(notification_state)"));
-            } catch (SQLException throwables) {
-                throwables.printStackTrace();
-            }
-            int sum = 0;
-            try {
-                sum = result.getInt("sum(notification_state)");
-            } catch (SQLException throwables) {
-                throwables.printStackTrace();
-            }
-            series.getData().add(new XYChart.Data("accepted_submissions",sum));
-
-            ResultSetMetaData resultMeta = null;
-            try {
-                resultMeta = result1.getMetaData();
-            } catch (SQLException throwables) {
-                throwables.printStackTrace();
-            }
+        while (result.next() && result1.next()) {
+            int sum1 = 0;
+            int sum2 = 0;
             int nbr_columns = 0;
-            try {
-                nbr_columns = resultMeta.getColumnCount();
-            } catch (SQLException throwables) {
-                throwables.printStackTrace();
+            int sum3 = 0;
+            // calculating accepted submissions
+            sum1 = result.getInt("sum(NOTIFICATION_STATE)");
+            series.getData().add(new XYChart.Data("accepted submissions", sum1));
+
+
+
+            nbr_columns = result1.getInt("count(*)");
+            // calculating unaccepted submissions
+            int inaccepted = 0;
+            if (sum1 < nbr_columns) {
+                inaccepted = nbr_columns - sum1;
+            } else {
+                 inaccepted = sum1 - nbr_columns;
             }
-            int inaccepted = nbr_columns-sum;
-            series.getData().add(new XYChart.Data("inaccepted_submissions",inaccepted));
+
+            series.getData().add(new XYChart.Data("unaccepted submissions", inaccepted));
+
+            // calculating submitted papers
+            sum2 = result.getInt("sum(SUBMISSION_STATE)");
+            series.getData().add(new XYChart.Data("submitted", sum2));
+
+
+            // calculating not submitted papers
+            int unsubmitted = 0;
+            if (sum2 < nbr_columns) {
+                unsubmitted = nbr_columns - sum2;
+            } else {
+                unsubmitted = sum2 -nbr_columns ;
+            }
+
+            series.getData().add(new XYChart.Data("not submitted", unsubmitted));
+
+            // calculating confirmed participation
+            sum3 = result.getInt("sum(CONFIRMATION_STATE)");
+            series.getData().add(new XYChart.Data("Presence confirmed", sum3));
+
+            // calculating unconfirmed participation
+            int unconfirmed = 0;
+            if (sum3 < nbr_columns) {
+                unconfirmed = nbr_columns - sum3;
+            } else {
+                unconfirmed = sum3 - nbr_columns ;
+            }
+
+            series.getData().add(new XYChart.Data("Presence unconfirmed", unconfirmed));
+
 
             BarChart.getData().addAll(series);
+
 
 
         }
