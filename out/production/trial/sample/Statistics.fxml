@@ -14,7 +14,7 @@
 <?import javafx.scene.layout.VBox?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="600.0" minWidth="800.0" prefHeight="600.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.StatisticsController">
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="600.0" minWidth="800.0" prefHeight="620.0" prefWidth="1332.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.StatisticsController">
     <children>
         <StackPane maxWidth="400.0" prefHeight="400.0" prefWidth="250.0" styleClass="bluebackground" stylesheets="@blue.css" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.topAnchor="0.0">
             <children>
@@ -115,7 +115,7 @@
                     </children></VBox>
             </children>
         </StackPane>
-      <BarChart fx:id="BarChart" layoutX="288.0" layoutY="143.0" prefHeight="330.0" prefWidth="484.0">
+      <BarChart fx:id="BarChart" layoutX="288.0" layoutY="138.0" prefHeight="442.0" prefWidth="986.0">
         <xAxis>
           <CategoryAxis side="BOTTOM" fx:id="x" />
         </xAxis>
@@ -123,10 +123,12 @@
           <NumberAxis fx:id="y" side="LEFT" />
         </yAxis>
       </BarChart>
-      <Label layoutX="435.0" layoutY="59.0" prefHeight="67.0" prefWidth="225.0" text="Submission statistics" textAlignment="JUSTIFY" textFill="#951ac1">
+      <Label layoutX="643.0" layoutY="52.0" prefHeight="67.0" prefWidth="290.0" text="result of your submissions" textAlignment="JUSTIFY" textFill="#951ac1">
          <font>
             <Font size="24.0" />
          </font>
       </Label>
+
+
     </children>
 </AnchorPane>

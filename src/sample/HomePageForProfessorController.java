@@ -53,7 +53,7 @@ public class HomePageForProfessorController
     }
 
     public void GoToMyAccount(ActionEvent actionEvent) throws IOException {
-        Parent MyAccountParent = FXMLLoader.load(getClass().getResource("MyAccountPage.fxml"));
+        Parent MyAccountParent = FXMLLoader.load(getClass().getResource("MyAccountPageProfessor.fxml"));
         Scene MyAccountPageScene = new Scene(MyAccountParent);
 
         // This line gets stage information

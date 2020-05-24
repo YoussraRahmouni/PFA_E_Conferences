@@ -47,7 +47,7 @@ public class ConferenceController  implements Initializable{
         // check if it's submission date and show the associated notification
         showSubmissionDateNotification();
         // check if it's notification date and show the associated notification
-        showNotificationDateNotififcation();
+        showNotificationDateNotification();
         // check if it's confirmation date and show the associated notification
         showConfirmationDateNotification();
 
@@ -377,9 +377,9 @@ public class ConferenceController  implements Initializable{
 
     }
 
-    public void showNotificationDateNotififcation(){
+    public void showNotificationDateNotification() {
 
-        if (NOTIFY_DATE_CONFERENCE.minusDays(117).equals(LocalDate.now())){
+        if (NOTIFY_DATE_CONFERENCE.minusDays(117).equals(LocalDate.now())) {
             String title = "Notification";
             String message = "Were you notified? Please answer. ";
             AnimationType type = AnimationType.SLIDE;

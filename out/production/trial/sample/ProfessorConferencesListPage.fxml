@@ -26,7 +26,7 @@
                               <Insets top="30.0" />
                            </HBox.margin>
                         </ImageView>
-                        <Button mnemonicParsing="false" prefHeight="45.0" prefWidth="138.0" style="-fx-background-color: #2980b9;" text="My Account" textFill="WHITE">
+                        <Button mnemonicParsing="false" onAction="#GoToMyAccount" prefHeight="45.0" prefWidth="138.0" style="-fx-background-color: #2980b9;" text="My Account" textFill="WHITE">
                            <font>
                               <Font size="18.0" />
                            </font>
@@ -49,7 +49,7 @@
                               <Insets left="16.0" />
                            </HBox.margin>
                         </ImageView>
-                        <Button mnemonicParsing="false" prefHeight="45.0" prefWidth="138.0" style="-fx-background-color: #2980b9;" text="Thesis students" textFill="WHITE">
+                        <Button mnemonicParsing="false" onAction="#GoToMyThesisStudents" prefHeight="45.0" prefWidth="138.0" style="-fx-background-color: #2980b9;" text="Thesis students" textFill="WHITE">
                            <font>
                               <Font size="16.0" />
                            </font>
@@ -72,7 +72,7 @@
                               <Insets left="16.0" />
                            </HBox.margin>
                         </ImageView>
-                        <Button mnemonicParsing="false" prefHeight="45.0" prefWidth="138.0" style="-fx-background-color: #2980b9;" text="Conferences List" textFill="WHITE">
+                        <Button mnemonicParsing="false" onAction="#GoToConferencesList" prefHeight="45.0" prefWidth="138.0" style="-fx-background-color: #2980b9;" text="Conferences List" textFill="WHITE">
                            <font>
                               <Font size="16.0" />
                            </font>
@@ -95,7 +95,7 @@
                               <Insets left="16.0" />
                            </HBox.margin>
                         </ImageView>
-                        <Button mnemonicParsing="false" prefHeight="45.0" prefWidth="138.0" style="-fx-background-color: #2980b9;" text="Group Statistics" textFill="WHITE">
+                        <Button mnemonicParsing="false" onAction="#GoToGroupStatistics" prefHeight="45.0" prefWidth="138.0" style="-fx-background-color: #2980b9;" text="Group Statistics" textFill="WHITE">
                            <font>
                               <Font size="16.0" />
                            </font>

@@ -105,7 +105,7 @@ public class ThesisStudentsListController implements Initializable {
         ResultSet result_check = statement_check.executeQuery(sql_check);
         if(result_check.next())
         {
-            System.out.println("Conference already exists");
+            System.out.println("Student already exists");
             Alert alert = new Alert(Alert.AlertType.WARNING);
             alert.setTitle("WARNING");
             alert.setHeaderText(null);
@@ -160,7 +160,7 @@ public class ThesisStudentsListController implements Initializable {
 
 
     public void GoToMyAccount (ActionEvent actionEvent) throws IOException {
-        Parent MyAccountParent = FXMLLoader.load(getClass().getResource("MyAccountPage.fxml"));
+        Parent MyAccountParent = FXMLLoader.load(getClass().getResource("MyAccountPageProfessor.fxml"));
         Scene MyAccountPageScene = new Scene(MyAccountParent);
 
         // This line gets stage information

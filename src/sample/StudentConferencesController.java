@@ -9,9 +9,10 @@ import javafx.fxml.Initializable;
 import javafx.scene.Node;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
-import javafx.scene.control.*;
+import javafx.scene.control.TableColumn;
+import javafx.scene.control.TableRow;
+import javafx.scene.control.TableView;
 import javafx.scene.control.cell.PropertyValueFactory;
-import javafx.scene.text.Font;
 import javafx.stage.Stage;
 
 import java.io.IOException;
@@ -54,22 +55,22 @@ public class StudentConferencesController implements Initializable {
         NOTIFICATION_DATE.setCellValueFactory(new PropertyValueFactory<>("notification_date"));
         CONFIRMATION_DATE.setCellValueFactory(new PropertyValueFactory<>("confirmation_date"));
 
-        /*StudentConferences_Table.setRowFactory( tv -> {
+        StudentConferences_Table.setRowFactory(tv -> {
             TableRow<Conference> row = new TableRow<>();
             row.setOnMouseClicked(event -> {
-                if (event.getClickCount() == 2 && (! row.isEmpty()) ) {
+                if (event.getClickCount() == 2 && (!row.isEmpty())) {
                     table_Clicked = StudentConferences_Table.getSelectionModel().getSelectedItem().getConference_name();
 
                     System.out.println(table_Clicked);
 
                     Parent ConferencePageParent = null;
                     try {
-                        ConferencePageParent = FXMLLoader.load(getClass().getResource("ConferencePage.fxml"));
+                        ConferencePageParent = FXMLLoader.load(getClass().getResource("StudentConferenceDetails.fxml"));
                     } catch (IOException e) {
                         e.printStackTrace();
                     }
                     Scene ConferencePageScene = new Scene(ConferencePageParent);
-                    Stage window = (Stage)((Node) event.getSource()).getScene().getWindow();
+                    Stage window = (Stage) ((Node) event.getSource()).getScene().getWindow();
                     window.setScene(ConferencePageScene);
                     window.hide();
                     window.setMaximized(true);
@@ -78,8 +79,8 @@ public class StudentConferencesController implements Initializable {
 
                 }
             });
-            return row ;
-        });*/
+            return row;
+        });
 
         try {
             StudentConferences_Table.setItems(getStudentConferences());
@@ -139,7 +140,7 @@ public class StudentConferencesController implements Initializable {
 
 
     public void GoToMyAccount(ActionEvent actionEvent) throws IOException {
-        Parent MyAccountParent = FXMLLoader.load(getClass().getResource("MyAccountPage.fxml"));
+        Parent MyAccountParent = FXMLLoader.load(getClass().getResource("MyAccountPageProfessor.fxml"));
         Scene MyAccountPageScene = new Scene(MyAccountParent);
 
         // This line gets stage information

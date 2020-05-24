@@ -4,16 +4,20 @@ import connectivity.ConnectionClass;
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
 import javafx.event.ActionEvent;
+import javafx.fxml.FXMLLoader;
 import javafx.fxml.Initializable;
+import javafx.scene.Node;
+import javafx.scene.Parent;
+import javafx.scene.Scene;
 import javafx.scene.control.*;
 import javafx.scene.control.cell.PropertyValueFactory;
+import javafx.stage.Stage;
 
+import java.io.IOException;
 import java.net.URL;
 import java.sql.*;
 import java.util.Date;
 import java.util.ResourceBundle;
-
-import static sample.OpenPageController.user_id;
 
 public class ProfessorConferenceListController implements Initializable {
 
@@ -99,14 +103,11 @@ public class ProfessorConferenceListController implements Initializable {
     }
 
 
-
-
-
     public void AddToConferenceList(ActionEvent actionEvent) throws SQLException {
 
-                // create a new empty object
+        // create a new empty object
         Conference conference = new Conference();
-                // set our information input
+        // set our information input
         conference.setConference_name(Conference_Name.getText());
         conference.setSubject(Subject.getText());
         conference.setStart_date(Start_Date.getValue());
@@ -117,10 +118,10 @@ public class ProfessorConferenceListController implements Initializable {
         conference.setNotification_date(Notification_Date.getValue());
         conference.setConfirmation_date(Confirmation_Date.getValue());
         conference.setConference_Url(Conference_Link.getText());
-                //  add the object to the table view
+        //  add the object to the table view
         Conferences_Table.getItems().add(conference);
 
-                // add the conference into the database
+        // add the conference into the database
         // connect to the database
         ConnectionClass connectionClass = new ConnectionClass();
         Connection connection=connectionClass.getConnection();
@@ -131,7 +132,7 @@ public class ProfessorConferenceListController implements Initializable {
 
         System.out.println("added successfully");
 
-                // clear all fields
+        // clear all fields
         Conference_Name.clear();
         Subject.clear();
         Start_Date.getEditor().clear();
@@ -144,11 +145,44 @@ public class ProfessorConferenceListController implements Initializable {
         Conference_Link.clear();
 
 
-
-
-
-
-
     }
 
+    public void GoToMyAccount(ActionEvent actionEvent) throws IOException {
+        Parent MyAccountParent = FXMLLoader.load(getClass().getResource("MyAccountPageProfessor.fxml"));
+        Scene MyAccountPageScene = new Scene(MyAccountParent);
+
+        // This line gets stage information
+        Stage window = (Stage) ((Node) actionEvent.getSource()).getScene().getWindow();
+        window.setScene(MyAccountPageScene);
+        window.hide();
+        window.setMaximized(true);
+        window.show();
+    }
+
+    public void GoToMyThesisStudents(ActionEvent actionEvent) throws IOException {
+        Parent ThesisStudentsParent = FXMLLoader.load(getClass().getResource("MyThesisStudents.fxml"));
+        Scene ThesisStudentsScene = new Scene(ThesisStudentsParent);
+
+        // This line gets stage information
+        Stage window = (Stage) ((Node) actionEvent.getSource()).getScene().getWindow();
+        window.setScene(ThesisStudentsScene);
+        window.hide();
+        window.setMaximized(true);
+        window.show();
+    }
+
+    public void GoToConferencesList(ActionEvent actionEvent) throws IOException {
+        Parent ConferencesListParent = FXMLLoader.load(getClass().getResource("ProfessorConferencesListPage.fxml"));
+        Scene ConferencesListScene = new Scene(ConferencesListParent);
+
+        // This line gets stage information
+        Stage window = (Stage) ((Node) actionEvent.getSource()).getScene().getWindow();
+        window.setScene(ConferencesListScene);
+        window.hide();
+        window.setMaximized(true);
+        window.show();
+    }
+
+    public void GoToGroupStatistics(ActionEvent actionEvent) {
+    }
 }

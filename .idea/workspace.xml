@@ -1,7 +1,34 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="cdb932d9-7e58-4d94-93a9-e7b232ef17da" name="Default" comment="" />
+    <list default="true" id="cdb932d9-7e58-4d94-93a9-e7b232ef17da" name="Default" comment="newest commit">
+      <change afterPath="$PROJECT_DIR$/src/sample/MyAccountPageProfessor.fxml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/sample/MyAccountPageProfessorController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/sample/StudentConferenceDetails.fxml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/sample/StudentConferenceDetailsController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/trial/sample/ConferenceController.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/trial/sample/ConferenceController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/trial/sample/HomePageForProfessorController.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/trial/sample/HomePageForProfessorController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/trial/sample/MyConferences.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/trial/sample/MyConferences.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/trial/sample/MyThesisStudentsController.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/trial/sample/MyThesisStudentsController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/trial/sample/ProfessorConferenceListController.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/trial/sample/ProfessorConferenceListController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/trial/sample/ProfessorConferencesListPage.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/trial/sample/ProfessorConferencesListPage.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/trial/sample/Statistics.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/trial/sample/Statistics.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/trial/sample/StatisticsController.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/trial/sample/StatisticsController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/trial/sample/StudentConferencesController.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/trial/sample/StudentConferencesController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/trial/sample/ThesisStudentsListController.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/trial/sample/ThesisStudentsListController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/sample/ConferenceController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/sample/ConferenceController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/sample/HomePageForProfessorController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/sample/HomePageForProfessorController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/sample/MyConferences.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/sample/MyConferences.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/sample/MyThesisStudentsController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/sample/MyThesisStudentsController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/sample/ProfessorConferenceListController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/sample/ProfessorConferenceListController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/sample/ProfessorConferencesListPage.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/sample/ProfessorConferencesListPage.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/sample/Statistics.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/sample/Statistics.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/sample/StatisticsController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/sample/StatisticsController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/sample/StudentConferencesController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/sample/StudentConferencesController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/sample/ThesisStudentsListController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/sample/ThesisStudentsListController.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -64,8 +91,14 @@
       <setting name="OPEN_NEW_TAB" value="false" />
     </FindUsagesManager>
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
   <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true" />
   <component name="ProjectId" id="1bM7EdpEgtAjDeqw1uc2lDVvy7K" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectReloadState">
     <option name="STATE" value="0" />
   </component>
@@ -75,6 +108,7 @@
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="GoToClass.includeLibraries" value="false" />
     <property name="GoToClass.toSaveIncludeLibraries" value="false" />
     <property name="GoToFile.includeJavaFiles" value="false" />
@@ -92,15 +126,15 @@
     <property name="settings.editor.selected.configurable" value="preferences.pathVariables" />
   </component>
   <component name="RecentsManager">
-    <key name="CreateClassDialog.RecentsKey">
-      <recent name="sample" />
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\Rahmouni Youssra\IdeaProjects\trial\src\sample" />
+      <recent name="C:\Users\Rahmouni Youssra\IdeaProjects\trial\Lib" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
       <recent name="sample" />
     </key>
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\Users\Rahmouni Youssra\IdeaProjects\trial\src\sample" />
-      <recent name="C:\Users\Rahmouni Youssra\IdeaProjects\trial\Lib" />
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="sample" />
     </key>
   </component>
   <component name="RunManager">
@@ -204,7 +238,13 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="OFFER_MOVE_TO_ANOTHER_CHANGELIST_ON_PARTIAL_COMMIT" value="true" />
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <option name="INCLUDE_TEXT_INTO_SHELF" value="false" />
+    <MESSAGE value="newest commit" />
+    <option name="LAST_COMMIT_MESSAGE" value="newest commit" />
+    <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
+    <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
+    <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />
   </component>
   <component name="WindowStateProjectService">
     <state x="400" y="34" key="#Main" timestamp="1589158978565">
@@ -215,46 +255,54 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="413" y="118" key="#com.intellij.codeInsight.editorActions.RestoreReferencesDialog/0.0.1366.728@0.0.1366.728" timestamp="1589163188650" />
-    <state x="488" y="79" key="#com.intellij.ide.util.MemberChooser" timestamp="1590112969473">
+    <state x="460" y="166" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1590210547943">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="488" y="79" key="#com.intellij.ide.util.MemberChooser/0.0.1366.728@0.0.1366.728" timestamp="1590112969473" />
+    <state x="460" y="166" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1366.728@0.0.1366.728" timestamp="1590210547943" />
+    <state x="488" y="79" key="#com.intellij.ide.util.MemberChooser" timestamp="1590325866914">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="488" y="79" key="#com.intellij.ide.util.MemberChooser/0.0.1366.728@0.0.1366.728" timestamp="1590325866914" />
     <state x="413" y="139" key="#com.intellij.ide.util.PackageChooserDialog" timestamp="1588778243473">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="413" y="139" key="#com.intellij.ide.util.PackageChooserDialog/0.0.1366.728@0.0.1366.728" timestamp="1588778243473" />
-    <state x="413" y="110" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1590191668232">
+    <state x="413" y="110" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1590300702800">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="413" y="110" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1366.728@0.0.1366.728" timestamp="1590191668232" />
+    <state x="413" y="110" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1366.728@0.0.1366.728" timestamp="1590300702800" />
+    <state x="353" y="0" key="CommitChangelistDialog2" timestamp="1590330920469">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="353" y="0" key="CommitChangelistDialog2/0.0.1366.728@0.0.1366.728" timestamp="1590330920469" />
     <state x="463" y="105" key="FileChooserDialogImpl" timestamp="1589759932885">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="463" y="105" key="FileChooserDialogImpl/0.0.1366.728@0.0.1366.728" timestamp="1589759932885" />
-    <state width="1323" height="177" key="GridCell.Tab.0.bottom" timestamp="1590193970695">
+    <state width="1323" height="177" key="GridCell.Tab.0.bottom" timestamp="1590330732553">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="177" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1590193970695" />
-    <state width="1323" height="177" key="GridCell.Tab.0.center" timestamp="1590193970695">
+    <state width="1323" height="177" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1590330732553" />
+    <state width="1323" height="177" key="GridCell.Tab.0.center" timestamp="1590330732553">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="177" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1590193970695" />
-    <state width="1323" height="177" key="GridCell.Tab.0.left" timestamp="1590193970695">
+    <state width="1323" height="177" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1590330732553" />
+    <state width="1323" height="177" key="GridCell.Tab.0.left" timestamp="1590330732553">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="177" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1590193970695" />
-    <state width="1323" height="177" key="GridCell.Tab.0.right" timestamp="1590193970695">
+    <state width="1323" height="177" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1590330732553" />
+    <state width="1323" height="177" key="GridCell.Tab.0.right" timestamp="1590330732553">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="177" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1590193970695" />
+    <state width="1323" height="177" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1590330732553" />
     <state x="184" y="0" key="SettingsEditor" timestamp="1589759935402">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="184" y="0" key="SettingsEditor/0.0.1366.728@0.0.1366.728" timestamp="1589759935402" />
-    <state x="378" y="187" key="com.intellij.ide.util.TipDialog" timestamp="1590189342568">
+    <state x="378" y="187" key="com.intellij.ide.util.TipDialog" timestamp="1590325281613">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="378" y="187" key="com.intellij.ide.util.TipDialog/0.0.1366.728@0.0.1366.728" timestamp="1590189342568" />
+    <state x="378" y="187" key="com.intellij.ide.util.TipDialog/0.0.1366.728@0.0.1366.728" timestamp="1590325281613" />
     <state x="346" y="49" width="672" height="678" key="search.everywhere.popup" timestamp="1588689790122">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
