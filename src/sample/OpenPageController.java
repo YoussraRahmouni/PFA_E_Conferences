@@ -7,31 +7,24 @@ import javafx.scene.Node;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.scene.control.Alert;
-import javafx.scene.control.TableRow;
+import javafx.scene.control.PasswordField;
 import javafx.scene.control.TextField;
 import javafx.stage.Stage;
-import tray.animations.AnimationType;
-import tray.notification.NotificationType;
-import tray.notification.TrayNotification;
 
-import javax.management.Notification;
-import javax.swing.*;
 import java.io.IOException;
-import java.sql.*;
-
-import static sample.OpenPageController.user_id;
-import sample.MyConferencesController;
-import sample.Conference;
+import java.sql.Connection;
+import java.sql.ResultSet;
+import java.sql.SQLException;
+import java.sql.Statement;
 
 public class OpenPageController {
-    public TextField password;
+
     public TextField email;
+    // static variables
     public static int user_id;
+    public PasswordField password;
     public static boolean alert;
     public static String profession;
-
-
-
 
 
 
