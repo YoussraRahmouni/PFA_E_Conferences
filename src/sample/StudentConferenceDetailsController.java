@@ -199,6 +199,12 @@ public class StudentConferenceDetailsController implements Initializable {
         } catch (SQLException e) {
             e.printStackTrace();
         }
+        Submitted.setDisable(true);
+        Not_Submitted.setDisable(true);
+        Accepted.setDisable(true);
+        Not_Accepted.setDisable(true);
+        Confirmed.setDisable(true);
+        Not_Confirmed.setDisable(true);
 
 
     }

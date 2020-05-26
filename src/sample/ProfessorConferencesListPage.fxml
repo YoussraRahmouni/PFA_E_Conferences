@@ -122,11 +122,13 @@
       </StackPane>
       <HBox layoutX="264.0" layoutY="519.0" prefHeight="76.0" prefWidth="665.0" AnchorPane.leftAnchor="264.0" AnchorPane.rightAnchor="50.0">
          <children>
-            <Button fx:id="Add_To_Conf_List" layoutX="308.0" mnemonicParsing="false" onAction="#AddToConferenceList" prefHeight="51.0" prefWidth="311.0" text="Add to Conference List" textAlignment="CENTER">
-               <HBox.margin>
-                  <Insets left="250.0" top="25.0" />
-               </HBox.margin>
-            </Button>
+             <Button fx:id="Add_To_Conf_List" layoutX="308.0" mnemonicParsing="false" onAction="#AddToConferenceList"
+                     prefHeight="51.0" prefWidth="311.0" style="-fx-background-color: #2ed573;"
+                     text="Add to Conference List" textAlignment="CENTER">
+                 <HBox.margin>
+                     <Insets left="250.0" top="25.0"/>
+                 </HBox.margin>
+             </Button>
          </children>
          <padding>
             <Insets left="100.0" />

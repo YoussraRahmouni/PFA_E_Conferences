@@ -1,28 +1,25 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import javafx.geometry.Insets?>
-<?import javafx.scene.control.Button?>
-<?import javafx.scene.control.TableColumn?>
-<?import javafx.scene.control.TableView?>
-<?import javafx.scene.image.Image?>
-<?import javafx.scene.image.ImageView?>
-<?import javafx.scene.layout.AnchorPane?>
-<?import javafx.scene.layout.HBox?>
-<?import javafx.scene.layout.StackPane?>
-<?import javafx.scene.layout.VBox?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
 <?import javafx.scene.text.Font?>
-
-<AnchorPane minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="964.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.MyThesisStudentsController">
-   <children>
-      <StackPane maxWidth="400.0" prefHeight="400.0" prefWidth="250.0" styleClass="bluebackground" stylesheets="@blue.css" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.topAnchor="0.0">
-         <children>
-            <VBox prefHeight="200.0" prefWidth="100.0">
-               <children>
-                  <HBox prefHeight="116.0" prefWidth="250.0">
-                     <children>
-                        <ImageView blendMode="DARKEN" fitHeight="150.0" fitWidth="121.0" pickOnBounds="true" preserveRatio="true">
-                           <image>
-                              <Image url="@userIcon2.png" />
+<AnchorPane xmlns:fx="http://javafx.com/fxml/1" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0"
+            prefWidth="964.0" xmlns="http://javafx.com/javafx/8" fx:controller="sample.MyThesisStudentsController">
+    <children>
+        <StackPane maxWidth="400.0" prefHeight="400.0" prefWidth="250.0" styleClass="bluebackground"
+                   stylesheets="@blue.css" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0"
+                   AnchorPane.topAnchor="0.0">
+            <children>
+                <VBox prefHeight="200.0" prefWidth="100.0">
+                    <children>
+                        <HBox prefHeight="116.0" prefWidth="250.0">
+                            <children>
+                                <ImageView blendMode="DARKEN" fitHeight="150.0" fitWidth="121.0" pickOnBounds="true"
+                                           preserveRatio="true">
+                                    <image>
+                                        <Image url="@userIcon2.png"/>
                            </image>
                            <HBox.margin>
                               <Insets top="30.0" />
@@ -120,16 +117,20 @@
       </TableView>
       <HBox layoutX="275.0" layoutY="481.0" prefHeight="76.0" prefWidth="759.0" AnchorPane.leftAnchor="300.0">
          <children>
-            <Button fx:id="addFromThesisList" layoutX="360.0" layoutY="35.0" mnemonicParsing="false" onAction="#AddFromThesisStudentsList" prefHeight="51.0" prefWidth="311.0" text="Add From Thesis-List" textAlignment="CENTER">
-               <HBox.margin>
-                  <Insets left="50.0" top="25.0" />
-               </HBox.margin>
-            </Button>
-            <Button layoutX="308.0" mnemonicParsing="false" onAction="#DeleteFromMyThesisStudents" prefHeight="51.0" prefWidth="311.0" text="Delete Thesis Student" textAlignment="CENTER">
-               <HBox.margin>
-                  <Insets left="180.0" top="25.0" />
-               </HBox.margin>
-            </Button>
+             <Button fx:id="addFromThesisList" layoutX="360.0" layoutY="35.0" mnemonicParsing="false"
+                     onAction="#AddFromThesisStudentsList" prefHeight="51.0" prefWidth="311.0"
+                     style="-fx-background-color: #2ed573;" text="Add From Thesis-List" textAlignment="CENTER">
+                 <HBox.margin>
+                     <Insets left="50.0" top="25.0"/>
+                 </HBox.margin>
+             </Button>
+             <Button layoutX="308.0" mnemonicParsing="false" onAction="#DeleteFromMyThesisStudents" prefHeight="51.0"
+                     prefWidth="311.0" style="-fx-background-color: #ff6348;" text="Delete Thesis Student"
+                     textAlignment="CENTER">
+                 <HBox.margin>
+                     <Insets left="180.0" top="25.0"/>
+                 </HBox.margin>
+             </Button>
          </children>
          <padding>
             <Insets left="100.0" />

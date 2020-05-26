@@ -22,7 +22,7 @@ public class HomePageController  implements Initializable {
     public void initialize(URL url, ResourceBundle resourceBundle) {
         TranslateTransition transition = new TranslateTransition();
         transition.setDuration(Duration.seconds(3));
-        transition.setToX(500);
+        transition.setToX(700);
         transition.setNode(chair_animation);
         transition.play();
 

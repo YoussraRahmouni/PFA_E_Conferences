@@ -1,16 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import javafx.scene.effect.*?>
-<?import javafx.scene.shape.*?>
-<?import javafx.scene.text.*?>
 <?import javafx.geometry.*?>
-<?import javafx.scene.image.*?>
-<?import java.lang.*?>
-<?import java.util.*?>
-<?import javafx.scene.*?>
 <?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
 <?import javafx.scene.layout.*?>
-
+<?import javafx.scene.text.*?>
 <AnchorPane minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.HomePageController">
    <children>
       <StackPane maxWidth="400.0" prefHeight="400.0" prefWidth="250.0" styleClass="bluebackground" stylesheets="@blue.css" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.topAnchor="0.0">
@@ -109,13 +103,28 @@
                         <Insets top="20.0" />
                      </VBox.margin>
                   </HBox>
-               </children></VBox>
+               </children>
+            </VBox>
          </children>
       </StackPane>
-      <ImageView fx:id="chair_animation" fitHeight="193.0" fitWidth="296.0" layoutX="257.0" layoutY="101.0" pickOnBounds="true" preserveRatio="true">
-         <image>
-            <Image url="@office-chair-icon.png" />
-         </image>
-      </ImageView>
+       <ImageView fx:id="chair_animation" fitHeight="193.0" fitWidth="296.0" layoutX="257.0" layoutY="101.0"
+                  pickOnBounds="true" preserveRatio="true">
+           <image>
+               <Image url="@office-desk-and-chair-icons-4.png"/>
+           </image>
+       </ImageView>
+       <Label layoutX="547.0" layoutY="182.0" prefHeight="61.0" prefWidth="435.0" text="Welcome To I-Conferences"
+              AnchorPane.leftAnchor="547.0">
+           <font>
+               <Font size="36.0"/>
+           </font>
+       </Label>
+       <Label contentDisplay="CENTER" layoutX="368.0" layoutY="292.0" prefHeight="80.0" prefWidth="705.0"
+              text="I-Conferences an easy tool to manage your conferences and keep track of all your important dates."
+              textAlignment="CENTER" AnchorPane.leftAnchor="420.0">
+           <font>
+               <Font size="16.0"/>
+           </font>
+       </Label>
    </children>
 </AnchorPane>

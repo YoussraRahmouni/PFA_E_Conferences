@@ -1,16 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="cdb932d9-7e58-4d94-93a9-e7b232ef17da" name="Default" comment="newest commit">
+    <list default="true" id="cdb932d9-7e58-4d94-93a9-e7b232ef17da" name="Default" comment="password field commit">
+      <change afterPath="$PROJECT_DIR$/src/sample/office-desk-and-chair-icons-4.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/trial/sample/MyConferences.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/trial/sample/MyConferences.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/trial/sample/ProfessorConferenceListController.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/trial/sample/ProfessorConferenceListController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/trial/sample/ProfessorConferencesListPage.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/trial/sample/ProfessorConferencesListPage.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/trial/sample/Statistics.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/trial/sample/Statistics.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/trial/sample/StatisticsController.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/trial/sample/StatisticsController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/trial/sample/StudentConferencesController.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/trial/sample/StudentConferencesController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/sample/OpenPage.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/sample/OpenPage.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/sample/OpenPageController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/sample/OpenPageController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/trial/sample/OpenPage.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/trial/sample/OpenPage.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/trial/sample/OpenPageController.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/trial/sample/OpenPageController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/sample/HomePage.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/sample/HomePage.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/sample/HomePageController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/sample/HomePageController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/sample/HomePageForProfessor.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/sample/HomePageForProfessor.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/sample/HomePageForProfessorController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/sample/HomePageForProfessorController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/sample/ProfessorConferencesListPage.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/sample/ProfessorConferencesListPage.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/sample/StudentConferenceDetailsController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/sample/StudentConferenceDetailsController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/sample/ThesisStudentsListPage.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/sample/ThesisStudentsListPage.fxml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -218,7 +220,14 @@
       <option name="project" value="LOCAL" />
       <updated>1590331020418</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="password field commit">
+      <created>1590431863064</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1590431863064</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
@@ -232,7 +241,8 @@
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <option name="INCLUDE_TEXT_INTO_SHELF" value="false" />
     <MESSAGE value="newest commit" />
-    <option name="LAST_COMMIT_MESSAGE" value="newest commit" />
+    <MESSAGE value="password field commit" />
+    <option name="LAST_COMMIT_MESSAGE" value="password field commit" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />
@@ -242,18 +252,18 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="400" y="34" key="#Main/0.0.1366.728@0.0.1366.728" timestamp="1589158978565" />
-    <state x="413" y="118" key="#com.intellij.codeInsight.editorActions.RestoreReferencesDialog" timestamp="1589163188650">
+    <state x="413" y="118" key="#com.intellij.codeInsight.editorActions.RestoreReferencesDialog" timestamp="1590503826605">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="413" y="118" key="#com.intellij.codeInsight.editorActions.RestoreReferencesDialog/0.0.1366.728@0.0.1366.728" timestamp="1589163188650" />
+    <state x="413" y="118" key="#com.intellij.codeInsight.editorActions.RestoreReferencesDialog/0.0.1366.728@0.0.1366.728" timestamp="1590503826605" />
     <state x="460" y="166" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1590210547943">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="460" y="166" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1366.728@0.0.1366.728" timestamp="1590210547943" />
-    <state x="488" y="79" key="#com.intellij.ide.util.MemberChooser" timestamp="1590325866914">
+    <state x="488" y="79" key="#com.intellij.ide.util.MemberChooser" timestamp="1590503790363">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="488" y="79" key="#com.intellij.ide.util.MemberChooser/0.0.1366.728@0.0.1366.728" timestamp="1590325866914" />
+    <state x="488" y="79" key="#com.intellij.ide.util.MemberChooser/0.0.1366.728@0.0.1366.728" timestamp="1590503790363" />
     <state x="413" y="139" key="#com.intellij.ide.util.PackageChooserDialog" timestamp="1588778243473">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
@@ -262,42 +272,42 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="413" y="110" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1366.728@0.0.1366.728" timestamp="1590300702800" />
-    <state x="353" y="0" key="CommitChangelistDialog2" timestamp="1590431788974">
+    <state x="353" y="0" key="CommitChangelistDialog2" timestamp="1590500759819">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="353" y="0" key="CommitChangelistDialog2/0.0.1366.728@0.0.1366.728" timestamp="1590431788974" />
+    <state x="353" y="0" key="CommitChangelistDialog2/0.0.1366.728@0.0.1366.728" timestamp="1590500759819" />
     <state x="463" y="105" key="FileChooserDialogImpl" timestamp="1589759932885">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="463" y="105" key="FileChooserDialogImpl/0.0.1366.728@0.0.1366.728" timestamp="1589759932885" />
-    <state width="1323" height="177" key="GridCell.Tab.0.bottom" timestamp="1590431750390">
+    <state width="1323" height="177" key="GridCell.Tab.0.bottom" timestamp="1590504864575">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="177" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1590431750390" />
-    <state width="1323" height="177" key="GridCell.Tab.0.center" timestamp="1590431750390">
+    <state width="1323" height="177" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1590504864575" />
+    <state width="1323" height="177" key="GridCell.Tab.0.center" timestamp="1590504864575">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="177" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1590431750390" />
-    <state width="1323" height="177" key="GridCell.Tab.0.left" timestamp="1590431750390">
+    <state width="1323" height="177" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1590504864575" />
+    <state width="1323" height="177" key="GridCell.Tab.0.left" timestamp="1590504864575">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="177" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1590431750390" />
-    <state width="1323" height="177" key="GridCell.Tab.0.right" timestamp="1590431750390">
+    <state width="1323" height="177" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1590504864575" />
+    <state width="1323" height="177" key="GridCell.Tab.0.right" timestamp="1590504864575">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="177" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1590431750390" />
+    <state width="1323" height="177" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1590504864575" />
     <state x="184" y="0" key="SettingsEditor" timestamp="1589759935402">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="184" y="0" key="SettingsEditor/0.0.1366.728@0.0.1366.728" timestamp="1589759935402" />
-    <state x="275" y="96" key="Vcs.Push.Dialog.v2" timestamp="1590331148281">
+    <state x="275" y="96" key="Vcs.Push.Dialog.v2" timestamp="1590431872083">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="275" y="96" key="Vcs.Push.Dialog.v2/0.0.1366.728@0.0.1366.728" timestamp="1590331148281" />
-    <state x="378" y="187" key="com.intellij.ide.util.TipDialog" timestamp="1590430922207">
+    <state x="275" y="96" key="Vcs.Push.Dialog.v2/0.0.1366.728@0.0.1366.728" timestamp="1590431872083" />
+    <state x="378" y="187" key="com.intellij.ide.util.TipDialog" timestamp="1590494526542">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="378" y="187" key="com.intellij.ide.util.TipDialog/0.0.1366.728@0.0.1366.728" timestamp="1590430922207" />
+    <state x="378" y="187" key="com.intellij.ide.util.TipDialog/0.0.1366.728@0.0.1366.728" timestamp="1590494526542" />
     <state x="346" y="49" width="672" height="678" key="search.everywhere.popup" timestamp="1588689790122">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
